@@ -15,9 +15,11 @@
   </head>
 
   <body class="text-gray-600 bg-gray-50">
-    <header class="flex fixed z-10 w-full h-14 bg-white">
-      <div class="flex items-center w-1/4 pl-4">
-        <button class="pl-2 pr-4">
+    <header
+      class="flex justify-between fixed z-10 w-full h-14 bg-white bg-opacity-95"
+    >
+      <div class="flex items-center lg:w-1/4 pl-4">
+        <button class="mr-3 sm:ml-2 sm:mr-6">
           <svg
             class="w-6 h-6"
             fill="none"
@@ -39,7 +41,7 @@
           class="flex items-center"
         >
           <svg
-            class="w-6 h-6 mr-2 text-red-600"
+            class="w-6 h-6 text-red-600"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -59,11 +61,13 @@
             ></path>
           </svg>
 
-          <span class="whitespace-nowrap">YouTube Clone</span>
+          <div class="hidden sm:block ml-2 whitespace-nowrap">YouTube</div>
         </a>
       </div>
 
-      <div class="p-2.5 flex items-center w-1/2">
+      <div
+        class="hidden sm:flex flex-1 items-center justify-end lg:w-1/2 max-w-screen-md p-2.5 pl-8 md:pl-12 md:px-8 lg:px-0"
+      >
         <div class="flex w-full h-full">
           <input
             type="text"
@@ -109,7 +113,42 @@
         </button>
       </div>
 
-      <div class="flex items-center justify-end w-1/4 space-x-5 py-2 px-4">
+      <div
+        class="flex items-center justify-end lg:w-1/4 space-x-2 sm:space-x-5 p-2 sm:px-4"
+      >
+        <button class="sm:hidden">
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+            ></path>
+          </svg>
+        </button>
+        <button class="sm:hidden">
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+        </button>
+
         <button>
           <svg
             class="w-5 h-5"
@@ -168,7 +207,141 @@
     </header>
 
     <aside
-      class="w-64 overflow-y-auto fixed z-10 top-14 h-[calc(100vh-3.5rem)] bg-white"
+      class="w-24 hidden md:block xl:hidden overflow-y-auto fixed z-10 top-14 h-[calc(100vh-3.5rem)] bg-white"
+    >
+      <section>
+        <ul>
+          <li>
+            <a
+              href="#"
+              class="flex flex-col items-center py-5 text-red-500 hover:bg-gray-100"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+
+              <span class="text-xs mt-1.5">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="flex flex-col items-center py-5 hover:bg-gray-100"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
+                ></path>
+              </svg>
+
+              <span class="text-xs mt-1.5">Trending</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="flex flex-col items-center py-5 hover:bg-gray-100"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                ></path>
+              </svg>
+
+              <span class="text-xs mt-1.5">Subscriptions</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="flex flex-col items-center py-5 hover:bg-gray-100"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                ></path>
+              </svg>
+
+              <span class="text-xs mt-1.5">Library</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="flex flex-col items-center py-5 hover:bg-gray-100"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+
+              <span class="text-xs mt-1.5">History</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <aside
+      class="hidden xl:block w-64 overflow-y-auto fixed z-10 top-14 h-[calc(100vh-3.5rem)] bg-white"
     >
       <section class="py-2 border-b">
         <ul>
@@ -814,8 +987,10 @@
       </section>
     </aside>
 
-    <main class="pt-14 pl-64">
-      <section class="fixed z-10 bg-white w-[calc(100%-16rem)]">
+    <main class="pt-14 md:pl-24 xl:pl-64">
+      <section
+        class="fixed z-10 bg-white bg-opacity-95 md:w-[calc(100%-6rem)] xl:w-[calc(100%-16rem)]"
+      >
         <div
           class="px-4 py-3 border-t border-b flex space-x-3 overflow-x-auto text-sm whitespace-nowrap"
         >
@@ -975,73 +1150,22 @@
         </div>
       </section>
 
-      <section class="grid grid-cols-4 gap-4 pt-20 px-5 pb-5">
-        <a
-          href="#"
-          class="mb-7 group"
+      <section class="pt-20 px-5 pb-5">
+        <div
+          class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-screen-2xl mx-auto"
         >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum/720/404" />
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum/720/404" />
 
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1051,107 +1175,16 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
-            </div>
-
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum1/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar1/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1161,107 +1194,60 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M4 6h16M4 12h16m-7 6h7"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
             </div>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum2/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar2/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1271,107 +1257,25 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                   ></path>
                 </svg>
-              </div>
-
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              </button>
             </div>
+          </a>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum1/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum3/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar3/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1381,107 +1285,16 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
-            </div>
-
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum4/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar4/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1491,107 +1304,60 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M4 6h16M4 12h16m-7 6h7"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
             </div>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar1/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum5/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar5/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1601,107 +1367,25 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                   ></path>
                 </svg>
-              </div>
-
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              </button>
             </div>
+          </a>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum2/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum6/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar6/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1711,107 +1395,16 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
-            </div>
-
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum7/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar7/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1821,107 +1414,60 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M4 6h16M4 12h16m-7 6h7"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
             </div>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar2/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum8/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar8/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1931,107 +1477,25 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                   ></path>
                 </svg>
-              </div>
-
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              </button>
             </div>
+          </a>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum3/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum9/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar9/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2041,107 +1505,16 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
-            </div>
-
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum10/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar10/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2151,107 +1524,60 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M4 6h16M4 12h16m-7 6h7"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
             </div>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar3/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum11/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar11/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2261,107 +1587,25 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                   ></path>
                 </svg>
-              </div>
-
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              </button>
             </div>
+          </a>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum4/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum12/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar12/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2371,107 +1615,16 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
-            </div>
-
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="mb-7 group"
-        >
-          <div class="relative">
-            <img src="https://picsum.photos/seed/picsum13/720/404" />
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </span>
-
-            <span
-              class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
-            >
-              12:32
-            </span>
-          </div>
-
-          <div class="flex items-start mt-3">
-            <img
-              src="https://picsum.photos/seed/avatar13/68"
-              class="mr-3 rounded-full w-9 h-9"
-            />
-
-            <div class="text-sm">
-              <span class="text-semibold text-gray-800">Video title 1</span>
-
-              <div class="mt-1 flex items-center">
-                <span class="mr-1">Channel name 1</span>
-
                 <svg
-                  class="w-3.5 h-3.5"
+                  class="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2481,40 +1634,1066 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M4 6h16M4 12h16m-7 6h7"
                   ></path>
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <span>1K views</span>
-
-                <span>&middot;</span>
-
-                <span>1 day ago</span>
-              </div>
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
             </div>
 
-            <button
-              class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar4/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </a>
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum5/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar5/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum6/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar6/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum7/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar7/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum8/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar8/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum9/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar9/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum10/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar10/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum11/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar11/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum12/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar12/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="mb-7 group"
+          >
+            <div class="relative">
+              <img src="https://picsum.photos/seed/picsum13/720/404" />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-0 group-hover:opacity-100 absolute top-8 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </span>
+
+              <span
+                class="opacity-100 group-hover:opacity-0 duration-500 absolute bottom-0 right-0 bg-black bg-opacity-60 text-white rounded-sm m-1 p-1 text-sm font-semibold"
+              >
+                12:32
+              </span>
+            </div>
+
+            <div class="flex items-start mt-3">
+              <img
+                src="https://picsum.photos/seed/avatar13/68"
+                class="mr-3 rounded-full w-9 h-9"
+              />
+
+              <div class="text-sm">
+                <span class="text-semibold text-gray-800">Video title 1</span>
+
+                <div class="mt-1 flex items-center">
+                  <span class="mr-1">Channel name 1</span>
+
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <span>1K views</span>
+
+                  <span>&middot;</span>
+
+                  <span>1 day ago</span>
+                </div>
+              </div>
+
+              <button
+                class="-mt-1 p-1 ml-auto opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+        </div>
       </section>
     </main>
   </body>
